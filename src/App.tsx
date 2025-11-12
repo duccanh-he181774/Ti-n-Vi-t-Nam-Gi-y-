@@ -441,6 +441,8 @@ const epochs: TimeEpoch[] = [
 ];
 
 const currencyData: CurrencyItem[] = [
+  
+  
   {
     "id": "polymer-10k",
     "name": "10.000 Đồng Polymer",
