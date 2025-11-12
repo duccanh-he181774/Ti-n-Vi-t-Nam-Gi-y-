@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+@font-face {
+  font-family: 'MoMo Trust Display';
+  src: url('/fonts/MoMoTrustDisplay-Regular.woff2') format('woff2'),
+       url('/fonts/MoMoTrustDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-momo-display {
+  font-family: 'MoMo Trust Display', sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 200 100% 97%;
+    --foreground: 200 15% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 15% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 10%;
+
+    --primary: 200 80% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 90%;
+    --secondary-foreground: 200 15% 10%;
+
+    --muted: 200 20% 90%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 195 85% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 85%;
+    --input: 200 20% 85%;
+    --ring: 200 80% 35%;
+
+    --radius: 0.5rem;
+    
+    /* Deep sea colors */
+    --ocean-surface: 200 100% 85%;
+    --ocean-shallow: 200 80% 50%;
+    --ocean-mid: 210 70% 30%;
+    --ocean-deep: 220 60% 15%;
+    --ocean-abyss: 220 40% 5%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 40% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 40% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 40% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 200 80% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 30% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 195 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 200 80% 45%;
+    
+    --sidebar-background: 220 40% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 200 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 30% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 30% 20%;
+    --sidebar-ring: 200 80% 45%;
+    
+    --ocean-surface: 200 100% 85%;
+    --ocean-shallow: 200 80% 50%;
+    --ocean-mid: 210 70% 30%;
+    --ocean-deep: 220 60% 15%;
+    --ocean-abyss: 220 40% 5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
