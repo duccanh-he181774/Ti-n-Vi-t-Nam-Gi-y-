@@ -245,7 +245,7 @@ const epochs: TimeEpoch[] = [
   {
     id: "currency-stabilization-1956",
     name: "Ổn Định Tiền Tệ",
-    startYear: 1956,
+    startYear: 1955,
     endYear: 1956,
     scrollHeight: 250,
     color: "hsl(45, 70%, 85%)",
