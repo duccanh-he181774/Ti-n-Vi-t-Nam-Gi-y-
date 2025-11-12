@@ -13,8 +13,8 @@ interface CurrencyItem {
   year: number;
   description: string;
   issuer: string;
-  issueDate?: string; // Thời gian phát hành
-  withdrawalDate?: string; // Thời gian thu hồi
+  issueDate?: string;
+  withdrawalDate?: string;
   imageUrl: string;
   imageDetailUrl?: string;
 }
@@ -28,9 +28,11 @@ interface TimeEpoch {
   color: string;
   description: string;
   backgroundImage?: string;
+  backgroundImageMobile?: string; 
 }
 
 const epochs: TimeEpoch[] = [
+  
   {
     id: "modern-2000s",
     name: "Thời Kỳ Hiện Đại",
@@ -41,18 +43,22 @@ const epochs: TimeEpoch[] = [
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
     description:
-      "Ra đời tiền polymer, hệ thống ngân hàng hiện đại hóa, VND ổn định."
+      "Ra đời tiền polymer, hệ thống ngân hàng hiện đại hóa, VND ổn định.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "renovation-1985-1995",
     name: "Thời Kỳ Đổi Mới",
     startYear: 1985,
     endYear: 1995,
-    scrollHeight: 1700,
+    scrollHeight: 1800,
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Cải cách kinh tế, phát hành đồng tiền mới, ổn định thị trường tài chính."
+    description: "Cải cách kinh tế, phát hành đồng tiền mới, ổn định thị trường tài chính.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "unification-1985",
@@ -63,7 +69,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Đổi tiền 10 đồng cũ lấy 1 đồng mới, chống lạm phát."
+    description: "Đổi tiền 10 đồng cũ lấy 1 đồng mới, chống lạm phát.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "economic-reform-1979-1982",
@@ -74,7 +82,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Điều chỉnh chính sách tiền tệ, phát triển hệ thống ngân hàng."
+    description: "Điều chỉnh chính sách tiền tệ, phát triển hệ thống ngân hàng.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "post-war-economy-1977-1979",
@@ -85,7 +95,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Tái thiết kinh tế sau chiến tranh, xây dựng hệ thống tài chính mới."
+    description: "Tái thiết kinh tế sau chiến tranh, xây dựng hệ thống tài chính mới.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "reunification-1973-1976",
@@ -96,7 +108,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Hợp nhất hệ thống tiền tệ Nam - Bắc, xây dựng nền kinh tế thống nhất."
+    description: "Hợp nhất hệ thống tiền tệ Nam - Bắc, xây dựng nền kinh tế thống nhất.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "liberation-1971-1972",
@@ -107,7 +121,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Chuẩn bị thống nhất tiền tệ, phát triển hệ thống ngân hàng cách mạng."
+    description: "Chuẩn bị thống nhất tiền tệ, phát triển hệ thống ngân hàng cách mạng.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "war-period-1970-1971",
@@ -118,7 +134,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Duy trì hệ thống tiền tệ trong điều kiện chiến tranh ác liệt."
+    description: "Duy trì hệ thống tiền tệ trong điều kiện chiến tranh ác liệt.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "tet-offensive-1970",
@@ -129,18 +147,22 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Điều chỉnh chính sách tiền tệ sau chiến dịch Tết Mậu Thân."
+    description: "Điều chỉnh chính sách tiền tệ sau chiến dịch Tết Mậu Thân.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "escalation-1968-1969",
     name: "Leo Thang Chiến Tranh",
     startYear: 1968,
     endYear: 1969,
-    scrollHeight: 570,
+    scrollHeight: 630,
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Hệ thống tiền tệ trong thời kỳ chiến tranh leo thang."
+    description: "Hệ thống tiền tệ trong thời kỳ chiến tranh leo thang.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "mid-war-1966-1968",
@@ -151,7 +173,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát triển tiền tệ vùng giải phóng, tăng cường kinh tế kháng chiến."
+    description: "Phát triển tiền tệ vùng giải phóng, tăng cường kinh tế kháng chiến.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "currency-reform-1966",
@@ -162,7 +186,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát hành loại tiền mới tại Miền Bắc."
+    description: "Phát hành loại tiền mới tại Miền Bắc.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "early-war-1964-1965",
@@ -173,7 +199,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Khởi đầu chiến tranh chống Mỹ, điều chỉnh hệ thống tiền tệ."
+    description: "Khởi đầu chiến tranh chống Mỹ, điều chỉnh hệ thống tiền tệ.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "pre-war-1963-1964",
@@ -184,7 +212,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Chuẩn bị kinh tế - tài chính cho cuộc kháng chiến lâu dài."
+    description: "Chuẩn bị kinh tế - tài chính cho cuộc kháng chiến lâu dài.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "socialist-build-1961-1963",
@@ -195,7 +225,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát triển hệ thống tiền tệ xã hội chủ nghĩa, quốc hữu hóa ngân hàng."
+    description: "Phát triển hệ thống tiền tệ xã hội chủ nghĩa, quốc hữu hóa ngân hàng.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "first-five-year-1957-1958",
@@ -206,7 +238,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Triển khai kế hoạch phát triển kinh tế - tài chính 5 năm đầu tiên."
+    description: "Triển khai kế hoạch phát triển kinh tế - tài chính 5 năm đầu tiên.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "currency-stabilization-1956",
@@ -217,7 +251,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Củng cố và ổn định hệ thống tiền tệ sau giải phóng Thủ đô."
+    description: "Củng cố và ổn định hệ thống tiền tệ sau giải phóng Thủ đô.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "post-dien-bien-1955",
@@ -228,7 +264,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát triển hệ thống tài chính sau chiến thắng lịch sử."
+    description: "Phát triển hệ thống tài chính sau chiến thắng lịch sử.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "land-reform-1952-1954",
@@ -239,7 +277,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Cải cách ruộng đất, xây dựng nền kinh tế nông nghiệp mới."
+    description: "Cải cách ruộng đất, xây dựng nền kinh tế nông nghiệp mới.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "dong-currency-1950-1951",
@@ -250,7 +290,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát hành đồng tiền Việt Nam Dân chủ Cộng hòa đầu tiên."
+    description: "Phát hành đồng tiền Việt Nam Dân chủ Cộng hòa đầu tiên.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "early-resistance-1948-1949",
@@ -261,7 +303,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Xây dựng hệ thống tài chính kháng chiến."
+    description: "Xây dựng hệ thống tài chính kháng chiến.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "resistance-economy-1948",
@@ -272,7 +316,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát triển kinh tế kháng chiến, chuẩn bị phát hành tiền mới."
+    description: "Phát triển kinh tế kháng chiến, chuẩn bị phát hành tiền mới.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "indochina-war-1944-1947",
@@ -283,7 +329,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Hệ thống tiền tệ trong thời kỳ đầu kháng chiến chống Pháp."
+    description: "Hệ thống tiền tệ trong thời kỳ đầu kháng chiến chống Pháp.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "wwii-1941-1943",
@@ -294,7 +342,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Đồng tiền Đông Dương dưới sự chiếm đóng của Nhật Bản."
+    description: "Đồng tiền Đông Dương dưới sự chiếm đóng của Nhật Bản.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "pre-wwii-1939",
@@ -305,7 +355,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Hệ thống tiền tệ trước Thế chiến thứ II."
+    description: "Hệ thống tiền tệ trước Thế chiến thứ II.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "depression-1935-1937",
@@ -316,7 +368,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Thời kỳ khủng hoảng kinh tế thế giới ảnh hưởng đến Đông Dương."
+    description: "Thời kỳ khủng hoảng kinh tế thế giới ảnh hưởng đến Đông Dương.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "colonial-reform-1931-1933",
@@ -327,7 +381,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Pháp điều chỉnh hệ thống tiền tệ thuộc địa."
+    description: "Pháp điều chỉnh hệ thống tiền tệ thuộc địa.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "post-wwi-1927-1929",
@@ -338,7 +394,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Phát triển kinh tế thuộc địa sau Thế chiến thứ nhất."
+    description: "Phát triển kinh tế thuộc địa sau Thế chiến thứ nhất.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "wwi-impact-1919-1922",
@@ -349,7 +407,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Hệ thống tiền tệ chịu ảnh hưởng của Thế chiến thứ nhất."
+    description: "Hệ thống tiền tệ chịu ảnh hưởng của Thế chiến thứ nhất.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "wwi-period-1913-1918",
@@ -360,7 +420,9 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Đông Dương trong Thế chiến thứ nhất, điều chỉnh tiền tệ."
+    description: "Đông Dương trong Thế chiến thứ nhất, điều chỉnh tiền tệ.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   },
   {
     id: "french-colonial-1894-1905",
@@ -371,11 +433,16 @@ const epochs: TimeEpoch[] = [
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
-    description: "Pháp thiết lập hệ thống tiền tệ thuộc địa tại Đông Dương."
+    description: "Pháp thiết lập hệ thống tiền tệ thuộc địa tại Đông Dương.",
+    backgroundImageMobile:
+      "url('https://cdn2.fptshop.com.vn/unsafe/800x0/hinh_nen_la_co_viet_nam_1_ca26a98511.jpg')"
   }
+
 ];
 
 const currencyData: CurrencyItem[] = [
+  
+  
   {
     "id": "polymer-10k",
     "name": "10.000 Đồng Polymer",
@@ -2633,6 +2700,8 @@ const currencyData: CurrencyItem[] = [
     "imageDetailUrl": "https://res.cloudinary.com/do7ul09eo/image/upload/v1762536483/photo-1-15413203930142127986118_j4vlu6.webp"
   }
 
+
+
 ];
 
 const YearIndicator = ({ year, currentEpoch, isVisible }: { year: number; currentEpoch: TimeEpoch | null; isVisible: boolean }) => {
@@ -2643,37 +2712,37 @@ const YearIndicator = ({ year, currentEpoch, isVisible }: { year: number; curren
   }
 
   return (
-    <div className="fixed top-3/4 left-0 right-0 z-50">
+    <div className="fixed top-2/3 sm:top-3/4 left-0 right-0 z-50 px-2 sm:px-4">
       <div className="w-full">
         <div className="relative">
           <div
-            className="h-1 shadow-lg"
+            className="h-0.5 sm:h-1 shadow-lg"
             style={{
               background: '#ffffff',
-              backgroundImage: 'repeating-linear-gradient(90deg, #ffffff 0, #ffffff 20px, transparent 20px, transparent 35px)',
+              backgroundImage: 'repeating-linear-gradient(90deg, #ffffff 0, #ffffff 15px, transparent 15px, transparent 25px)',
               opacity: 0.9
             }}
           />
 
-          <div className="absolute -top-10 left-1/2 -translate-x-1/2">
-            <div className="bg-background/95 backdrop-blur-sm border-2 border-white px-6 py-2 rounded-lg shadow-xl">
-              <div className="text-2xl font-bold text-yellow-900 font-mono text-center">
+          <div className="absolute -top-7 sm:-top-8 md:-top-10 left-1/2 -translate-x-1/2">
+            <div className="bg-background/95 backdrop-blur-sm border-2 border-white px-2 py-1 sm:px-3 sm:py-1.5 md:px-6 md:py-2 rounded-lg shadow-xl">
+              <div className="text-base sm:text-lg md:text-2xl font-bold text-yellow-900 font-mono text-center whitespace-nowrap">
                 Năm {displayYear}
               </div>
             </div>
           </div>
 
           {currentEpoch && (
-            <div className="absolute top-4 left-8 text-left">
-              <div className="text-base font-bold text-yellow-900 whitespace-nowrap bg-background/80 backdrop-blur-sm px-3 py-1 rounded">
+            <div className="absolute top-2 sm:top-3 md:top-4 left-1 sm:left-2 md:left-8 text-left">
+              <div className="text-[10px] sm:text-xs md:text-base font-bold text-yellow-900 whitespace-nowrap bg-background/80 backdrop-blur-sm px-1.5 py-0.5 sm:px-2 sm:py-0.5 md:px-3 md:py-1 rounded">
                 {currentEpoch.name}
               </div>
             </div>
           )}
 
           {currentEpoch && (
-            <div className="absolute top-4 right-8 text-right">
-              <div className="text-base text-yellow-900 whitespace-nowrap bg-background/80 backdrop-blur-sm px-3 py-1 rounded">
+            <div className="absolute top-2 sm:top-3 md:top-4 right-1 sm:right-2 md:right-8 text-right max-w-[45%] sm:max-w-[40%] md:max-w-none">
+              <div className="text-[10px] sm:text-xs md:text-base text-yellow-900 bg-background/80 backdrop-blur-sm px-1.5 py-0.5 sm:px-2 sm:py-0.5 md:px-3 md:py-1 rounded truncate md:whitespace-nowrap">
                 {currentEpoch.description}
               </div>
             </div>
@@ -2700,49 +2769,48 @@ const CurrencyItem = ({ item, isVisible, opacity }: { item: CurrencyItem; isVisi
         }}
       >
         <div className="relative group">
-          <div className="absolute inset-0 bg-yellow-500/20 blur-xl rounded-lg group-hover:bg-yellow-500/40 transition-all duration-300" />
+          <div className="absolute inset-0 bg-yellow-500/20 blur-lg sm:blur-xl rounded-lg group-hover:bg-yellow-500/40 transition-all duration-300" />
           <img
             src={item.imageUrl}
             alt={item.name}
-            className="relative w-[14rem] h-26 md:w-[20rem] md:h-36 object-contain bg-gradient-to-b from-yellow-100 to-yellow-50 rounded-xl cursor-pointer hover:shadow-2xl transition-transform duration-300 border border-yellow-600/40 shadow-md"
+            className="relative w-24 h-16 sm:w-32 sm:h-20 md:w-44 md:h-24 lg:w-[20rem] lg:h-36 object-contain bg-gradient-to-b from-yellow-100 to-yellow-50 rounded-lg sm:rounded-xl cursor-pointer hover:shadow-2xl transition-transform duration-300 border border-yellow-600/40 shadow-md"
             onClick={() => setIsOpen(true)}
           />
-          <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-background/95 backdrop-blur-sm px-4 py-1.5 rounded-full border-2 border-yellow-600/40 text-sm font-bold text-yellow-700 whitespace-nowrap shadow-lg">
+          <div className="absolute -bottom-1.5 sm:-bottom-2 md:-bottom-3 left-1/2 -translate-x-1/2 bg-background/95 backdrop-blur-sm px-1.5 py-0.5 sm:px-2 sm:py-1 md:px-4 md:py-1.5 rounded-full border-2 border-yellow-600/40 text-[10px] sm:text-xs md:text-sm font-bold text-yellow-700 whitespace-nowrap shadow-lg">
             {displayYear}
           </div>
         </div>
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="bg-gradient-to-br from-yellow-50 to-amber-50 border-2 border-yellow-600/40 max-w-4xl shadow-2xl">
-          <DialogHeader className="space-y-4 pb-4">
-            <div className="flex items-start justify-between gap-4">
-              <DialogTitle className="text-3xl md:text-4xl font-bold text-yellow-900 leading-tight flex-1">
+        <DialogContent className="bg-gradient-to-br from-yellow-50 to-amber-50 border-2 border-yellow-600/40 w-[calc(100vw-2rem)] sm:w-[calc(100vw-4rem)] sm:max-w-2xl md:max-w-4xl shadow-2xl max-h-[85vh] sm:max-h-[90vh] overflow-y-auto">
+          <DialogHeader className="space-y-2 sm:space-y-3 md:space-y-4 pb-2 sm:pb-3 md:pb-4">
+            <div className="flex flex-col sm:flex-row items-start justify-between gap-2 sm:gap-3 md:gap-4">
+              <DialogTitle className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-yellow-900 leading-tight flex-1 pr-2">
                 {item.name}
               </DialogTitle>
-              <span className="text-lg font-mono text-yellow-700 bg-yellow-200/60 px-4 py-2 rounded-full border border-yellow-600/30 shadow-sm flex-shrink-0">
+              <span className="text-xs sm:text-sm md:text-base lg:text-lg font-mono text-yellow-700 bg-yellow-200/60 px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full border border-yellow-600/30 shadow-sm flex-shrink-0">
                 {displayYear}
               </span>
             </div>
-            <DialogDescription className="text-base md:text-lg text-yellow-900/80 leading-relaxed">
+            <DialogDescription className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/80 leading-relaxed">
               {item.description}
             </DialogDescription>
           </DialogHeader>
 
-          <div className="mt-6 space-y-6">
-            {/* Image Container với khung đẹp hơn */}
+          <div className="mt-3 sm:mt-4 md:mt-6 space-y-3 sm:space-y-4 md:space-y-6">
             <div
               onClick={() => setIsFullscreen(true)}
               className="cursor-zoom-in group relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-amber-400/20 rounded-xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative bg-white rounded-xl p-4 border-2 border-yellow-600/30 shadow-xl max-h-[30vh] flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-amber-400/20 rounded-lg sm:rounded-xl blur-lg sm:blur-xl group-hover:blur-2xl transition-all duration-300" />
+              <div className="relative bg-white rounded-lg sm:rounded-xl p-2 sm:p-3 md:p-4 border-2 border-yellow-600/30 shadow-xl max-h-[20vh] sm:max-h-[25vh] md:max-h-[30vh] flex items-center justify-center overflow-hidden">
                 <img
                   src={item.imageDetailUrl}
                   alt={item.name}
-                  className="max-h-full max-w-full object-contain rounded-lg"
+                  className="max-h-full max-w-full object-contain rounded"
                 />
-                <div className="absolute bottom-6 right-6 bg-black/60 text-white px-3 py-1.5 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-2 sm:bottom-3 md:bottom-4 lg:bottom-6 right-2 sm:right-3 md:right-4 lg:right-6 bg-black/60 text-white px-1.5 py-0.5 sm:px-2 sm:py-1 md:px-3 md:py-1.5 rounded-full text-[10px] sm:text-xs md:text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   🔍 Nhấn để phóng to
                 </div>
               </div>
@@ -2753,22 +2821,21 @@ const CurrencyItem = ({ item, isVisible, opacity }: { item: CurrencyItem; isVisi
                 <img
                   src={item.imageDetailUrl}
                   alt={item.name}
-                  className="max-w-full max-h-full object-contain cursor-zoom-out"
+                  className="max-w-full max-h-full object-contain cursor-zoom-out p-4"
                   onClick={() => setIsFullscreen(false)}
                 />
               </DialogContent>
             </Dialog>
 
-            {/* Info Cards với layout đẹp hơn */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-white/70 backdrop-blur-sm rounded-xl p-5 border border-yellow-600/20 shadow-md">
-                <div className="flex items-start gap-3">
-                  <div className="text-2xl flex-shrink-0">🏛️</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4">
+              <div className="bg-white/70 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border border-yellow-600/20 shadow-md">
+                <div className="flex items-start gap-2 md:gap-3">
+                  <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">🏛️</div>
                   <div>
-                    <div className="text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-1">
+                    <div className="text-[10px] sm:text-xs md:text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-0.5 sm:mb-1">
                       Phát hành
                     </div>
-                    <div className="text-base text-yellow-900 font-medium">
+                    <div className="text-xs sm:text-sm md:text-base text-yellow-900 font-medium">
                       {item.issuer}
                     </div>
                   </div>
@@ -2776,14 +2843,14 @@ const CurrencyItem = ({ item, isVisible, opacity }: { item: CurrencyItem; isVisi
               </div>
 
               {item.issueDate && (
-                <div className="bg-white/70 backdrop-blur-sm rounded-xl p-5 border border-yellow-600/20 shadow-md">
-                  <div className="flex items-start gap-3">
-                    <div className="text-2xl flex-shrink-0">📅</div>
+                <div className="bg-white/70 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border border-yellow-600/20 shadow-md">
+                  <div className="flex items-start gap-2 md:gap-3">
+                    <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">📅</div>
                     <div>
-                      <div className="text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-1">
+                      <div className="text-[10px] sm:text-xs md:text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-0.5 sm:mb-1">
                         Thời gian phát hành
                       </div>
-                      <div className="text-base text-yellow-900 font-medium">
+                      <div className="text-xs sm:text-sm md:text-base text-yellow-900 font-medium">
                         {item.issueDate}
                       </div>
                     </div>
@@ -2792,14 +2859,14 @@ const CurrencyItem = ({ item, isVisible, opacity }: { item: CurrencyItem; isVisi
               )}
 
               {item.withdrawalDate && (
-                <div className="bg-white/70 backdrop-blur-sm rounded-xl p-5 border border-yellow-600/20 shadow-md md:col-span-2">
-                  <div className="flex items-start gap-3">
-                    <div className="text-2xl flex-shrink-0">🔄</div>
+                <div className="bg-white/70 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 border border-yellow-600/20 shadow-md sm:col-span-2">
+                  <div className="flex items-start gap-2 md:gap-3">
+                    <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">🔄</div>
                     <div>
-                      <div className="text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-1">
+                      <div className="text-[10px] sm:text-xs md:text-sm font-semibold text-yellow-700 uppercase tracking-wide mb-0.5 sm:mb-1">
                         Thời gian thu hồi
                       </div>
-                      <div className="text-base text-yellow-900 font-medium">
+                      <div className="text-xs sm:text-sm md:text-base text-yellow-900 font-medium">
                         {item.withdrawalDate}
                       </div>
                     </div>
@@ -2830,10 +2897,8 @@ export default function App() {
       const timelineTop = timelineRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
 
-      // YearIndicator ở vị trí 2/3 màn hình
       const indicatorPosition = windowHeight * (2 / 3);
 
-      // Tính opacity cho intro (mất dần khi scroll)
       const introFadeStart = windowHeight * 0.3;
       const introFadeEnd = windowHeight * 0.7;
       const scrollProgress = windowHeight - timelineTop;
@@ -2846,7 +2911,6 @@ export default function App() {
         setIntroOpacity(1 - (scrollProgress - introFadeStart) / (introFadeEnd - introFadeStart));
       }
 
-      // Kiểm tra xem đã scroll qua intro chưa
       if (timelineTop > 0) {
         setShowYearIndicator(false);
         setCurrentYear(epochs[0].endYear);
@@ -2856,9 +2920,6 @@ export default function App() {
 
       setShowYearIndicator(true);
 
-
-
-      // Tính scroll trong timeline (từ khi YearIndicator chạm timeline)
       const scrollInTimeline = indicatorPosition - timelineTop;
 
       let accumulatedScroll = 0;
@@ -2885,7 +2946,6 @@ export default function App() {
       }
     };
 
-
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
@@ -2895,18 +2955,40 @@ export default function App() {
   const getBackgroundStyle = () => {
     if (!currentEpoch) return { background: "hsl(45, 70%, 85%)" };
 
-    if (currentEpoch.backgroundImage) {
-      return {
-        background: currentEpoch.color,
-        backgroundImage: currentEpoch.backgroundImage,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
-      };
+    // Ưu tiên dùng backgroundImageMobile nếu có và đang ở mobile
+    const bgImage = isMobile && currentEpoch.backgroundImageMobile 
+      ? currentEpoch.backgroundImageMobile 
+      : currentEpoch.backgroundImage;
+
+    if (bgImage) {
+      if (isMobile) {
+        // Cấu hình riêng cho mobile - fit màn hình không zoom
+        return {
+          background: currentEpoch.color,
+          backgroundImage: bgImage,
+          backgroundSize: '100% auto', // Chiều ngang 100%, chiều cao tự động
+          backgroundPosition: 'center top',
+          backgroundAttachment: 'scroll',
+          backgroundRepeat: 'repeat-y', // Lặp lại nếu content dài
+        };
+      } else {
+        // Cấu hình cho desktop
+        return {
+          background: currentEpoch.color,
+          backgroundImage: bgImage,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          backgroundRepeat: 'no-repeat',
+        };
+      }
     }
 
-    return { background: currentEpoch.color };
+    return { 
+      background: currentEpoch.color,
+    };
   };
 
   const getCurrencyPosition = (item: CurrencyItem) => {
@@ -2930,63 +3012,55 @@ export default function App() {
     >
       <YearIndicator year={currentYear} currentEpoch={currentEpoch} isVisible={showYearIndicator} />
 
-      {/* Intro Section - fade out khi scroll */}
       <div
         className="h-screen fixed top-0 left-0 right-0 flex items-center justify-center 
   pointer-events-none transition-opacity duration-500 font-inter"
         style={{ opacity: introOpacity }}
       >
-        <div className="text-center px-4 max-w-5xl mx-auto">
+        <div className="text-center px-3 sm:px-4 max-w-5xl mx-auto">
           <div className="animate-in fade-in slide-in-from-top-4 duration-1000">
 
-            {/* Main Card Container */}
-            <div className="bg-yellow-50/90 backdrop-blur-sm border-2 border-yellow-600/30 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div className="bg-yellow-50/90 backdrop-blur-sm border-2 border-yellow-600/30 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-2xl">
 
-              {/* Main Title */}
-              <h1 className="font-dancing text-5xl md:text-7xl lg:text-8xl font-bold text-cyan-600 mb-4 drop-shadow-lg leading-tight">
+              <h1 className="font-dancing text-2xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl font-bold text-cyan-600 mb-2 sm:mb-3 md:mb-4 drop-shadow-lg leading-tight">
                 LỊCH SỬ TIỀN GIẤY
                 <br />
                 XUẤT HIỆN TẠI
               </h1>
 
-              {/* Country Name */}
-              <h2 className="font-momo-display font-bold text-3xl md:text-5xl lg:text-6xl text-red-600 mb-6">
+              <h2 className="font-momo-display font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-red-600 mb-3 sm:mb-4 md:mb-6">
                 VIỆT NAM
               </h2>
 
-              {/* Decorative Line */}
-              <div className="w-32 h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-6"></div>
+              <div className="w-16 sm:w-24 md:w-32 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-3 sm:mb-4 md:mb-6"></div>
 
-              {/* Subtitle/Description */}
-              <p className="text-lg md:text-xl lg:text-2xl text-yellow-900/85 max-w-2xl mx-auto font-inter leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-yellow-900/85 max-w-2xl mx-auto font-inter leading-relaxed px-2">
                 Hành trình xuyên thời gian của các đồng tiền giấy
                 <br />
-                <span className="text-base md:text-lg text-yellow-900/70">
+                <span className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/70">
                   Từ thời thuộc địa đến hiện đại
                 </span>
               </p>
 
-              {/* Scroll Indicator */}
-              <div className="mt-10 flex flex-col items-center gap-2">
-                <span className="text-sm md:text-base text-yellow-900/70 font-medium">
+              <div className="mt-4 sm:mt-6 md:mt-10 flex flex-col items-center gap-1 sm:gap-2">
+                <span className="text-[10px] sm:text-xs md:text-sm lg:text-base text-yellow-900/70 font-medium">
                   Cuộn xuống để khám phá
                 </span>
-                <div className="text-yellow-900/70 animate-bounce text-4xl">
+                <div className="text-yellow-900/70 animate-bounce text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                   ↓
                 </div>
               </div>
 
             </div>
 
-            {/* Additional Info Pills */}
-            <div className="flex flex-wrap justify-center gap-3 mt-6">
-              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-4 py-2 text-sm md:text-base text-yellow-900/80">
+            <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 md:gap-3 mt-3 sm:mt-4 md:mt-6">
+              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-yellow-900/80">
                 📅 1894 - 2010
               </div>
-              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-4 py-2 text-sm md:text-base text-yellow-900/80">
+              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-yellow-900/80">
                 💵 100+ loại tiền
               </div>
-              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-4 py-2 text-sm md:text-base text-yellow-900/80">
+              <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 text-[10px] sm:text-xs md:text-sm lg:text-base text-yellow-900/80">
                 🏛️ 31 thời kỳ
               </div>
             </div>
@@ -2995,17 +3069,14 @@ export default function App() {
         </div>
       </div>
 
-
-      {/* Spacer để tạo không gian cho intro */}
       <div className="h-screen" />
 
-      {/* Timeline Section - bắt đầu tính scroll từ đây */}
       <div
         ref={timelineRef}
         className="relative"
         style={{ height: `${totalScrollHeight + 1000}px` }}
       >
-        <div className="relative pt-32">
+        <div className="relative pt-16 sm:pt-20 md:pt-32">
           {currencyData.map((item) => {
             const itemPosition = getCurrencyPosition(item);
             const itemYearDiff = Math.abs(currentYear - item.year);
@@ -3016,24 +3087,34 @@ export default function App() {
             const indexInYear = itemsByYear.indexOf(item);
             const totalInYear = itemsByYear.length;
 
-            const itemsPerRow = 4;
+            const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
+            const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
+
+            // Số item tối đa mỗi dòng theo từng breakpoint
+            const itemsPerRow = isMobile ? 2 : isTablet ? 3 : 4;
+            
             const rowIndex = Math.floor(indexInYear / itemsPerRow);
             const colIndex = indexInYear % itemsPerRow;
 
             const itemsInCurrentRow = Math.min(itemsPerRow, totalInYear - rowIndex * itemsPerRow);
 
-            const itemSpacing =
-              totalInYear <= 2
-                ? 650
-                : totalInYear === 3
-                  ? 400
-                  : totalInYear === 4
-                    ? 340
-                    : 340;
+            // Khoảng cách giữa các item - tối ưu cho mobile
+            const itemSpacing = isMobile
+              ? 140 // Giảm khoảng cách trên mobile
+              : isTablet
+                ? 260
+                : totalInYear <= 2 ? 650 : totalInYear === 3 ? 400 : 340;
 
             const rowWidth = itemsInCurrentRow * itemSpacing;
             const horizontalOffset = colIndex * itemSpacing - rowWidth / 2 + itemSpacing / 2;
-            const baseSpacing = totalInYear > 8 ? 170 : totalInYear > 4 ? 170 : 200;
+            
+            // Khoảng cách theo chiều dọc - compact hơn trên mobile
+            const baseSpacing = isMobile
+              ? 110 // Giảm khoảng cách dọc trên mobile
+              : isTablet
+                ? 150
+                : totalInYear > 8 ? 170 : totalInYear > 4 ? 170 : 200;
+            
             const verticalOffset = rowIndex * baseSpacing;
 
             return (
@@ -3057,48 +3138,44 @@ export default function App() {
         </div>
       </div>
 
-      {/* OUTRO SECTION – Hiện ra khi scroll hết timeline */}
       <div
-        className="min-h-screen flex items-center justify-center pointer-events-none transition-opacity duration-700 py-20"
+        className="min-h-screen flex items-center justify-center pointer-events-none transition-opacity duration-700 py-8 sm:py-12 md:py-16 lg:py-20"
         style={{
           opacity: !showYearIndicator ? 1 : 0
         }}
       >
-        <div className="text-center space-y-8 px-6 max-w-4xl mx-auto">
+        <div className="text-center space-y-4 sm:space-y-6 md:space-y-8 px-3 sm:px-4 md:px-6 max-w-4xl mx-auto">
 
-          {/* Tiêu đề outro với background card */}
-          <div className="bg-yellow-50/90 backdrop-blur-sm border-2 border-yellow-600/30 rounded-2xl p-8 md:p-12 shadow-2xl">
+          <div className="bg-yellow-50/90 backdrop-blur-sm border-2 border-yellow-600/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-2xl">
 
-            <h1 className="text-4xl md:text-6xl font-bold text-yellow-900 drop-shadow-lg mb-4 leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-900 drop-shadow-lg mb-2 sm:mb-3 md:mb-4 leading-tight">
               BẠN ĐÃ KHÁM PHÁ HẾT
             </h1>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-yellow-800 drop-shadow-md mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-yellow-800 drop-shadow-md mb-3 sm:mb-4 md:mb-6">
               LỊCH SỬ TIỀN GIẤY TẠI VIỆT NAM
             </h2>
 
-            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-6"></div>
+            <div className="w-12 sm:w-16 md:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-3 sm:mb-4 md:mb-6"></div>
 
-            <p className="text-lg md:text-xl text-yellow-900/90 leading-relaxed">
-              Hành trình xuyên suốt qua các thời kỳ, biến động, cải cách<br className="hidden md:block" />
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-yellow-900/90 leading-relaxed px-2">
+              Hành trình xuyên suốt qua các thời kỳ, biến động, cải cách<br className="hidden sm:block" />
               và câu chuyện của đồng tiền giấy trên đất Việt.
             </p>
           </div>
 
-          {/* Disclaimer Card */}
-          <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-xl p-6 shadow-lg">
-            <div className="flex items-start gap-3 text-left">
-              <div className="text-2xl flex-shrink-0">ℹ️</div>
-              <p className="text-base md:text-lg text-yellow-900/90 leading-relaxed">
+          <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-lg">
+            <div className="flex items-start gap-2 sm:gap-3 text-left">
+              <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">ℹ️</div>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/90 leading-relaxed">
                 Trong quá trình tổng hợp còn nhiều sai sót và thiếu sót, rất mong nhận được sự đóng góp từ cộng đồng để hoàn thiện hơn nữa bộ sưu tập này.
               </p>
             </div>
           </div>
 
-          {/* Triết học Card */}
-          <div className="bg-gradient-to-br from-yellow-50/90 to-amber-50/90 backdrop-blur-sm border border-yellow-600/25 rounded-xl p-8 shadow-xl">
-            <div className="text-3xl mb-4">💭</div>
-            <p className="text-base md:text-lg text-yellow-900/95 leading-relaxed italic">
+          <div className="bg-gradient-to-br from-yellow-50/90 to-amber-50/90 backdrop-blur-sm border border-yellow-600/25 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-xl">
+            <div className="text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-3 md:mb-4">💭</div>
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/95 leading-relaxed italic px-2">
               Dù tồn tại với vô số hình dạng và giá trị, tiền tệ không chỉ là phương tiện trao đổi,
               mà còn là lời khẳng định của <span className="font-bold text-yellow-900 not-italic">niềm tin</span>.
               <br /><br />
@@ -3108,8 +3185,6 @@ export default function App() {
           </div>
         </div>
       </div>
-
-
 
     </div>
   );
