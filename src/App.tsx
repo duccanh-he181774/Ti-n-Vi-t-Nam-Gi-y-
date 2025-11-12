@@ -1140,7 +1140,7 @@ const currencyData: CurrencyItem[] = [
     "id": "vnch-20d-1969-a",
     "name": "20 đồng (Máy cày)",
     "year": 1958,
-    "description": "Tờ 20 đồng 1958 mang tông màu hồng-vàng, do Ngân hàng Nhà nước Việt Nam (Việt Nam Dân chủ Cộng hòa) phát hành. Mặt trước in chân dung Chủ tịch Hồ Chí Minh và Quốc huy. Mặt sau khắc họa hình ảnh máy cày trên đồng ruộng, biểu tượng cho cơ giới hóa nông nghiệp. (Lưu ý: Dữ liệu '1969' và 'VNCH' của bạn không khớp với hình ảnh này).",
+    "description": "Tờ 20 đồng 1958 mang tông màu hồng-vàng, do Ngân hàng Nhà nước Việt Nam (Việt Nam Dân chủ Cộng hòa) phát hành. Mặt trước in chân dung Chủ tịch Hồ Chí Minh và Quốc huy. Mặt sau khắc họa hình ảnh máy cày trên đồng ruộng, biểu tượng cho cơ giới hóa nông nghiệp.",
     "issuer": "Ngân hàng Nhà nước Việt Nam",
     "issueDate": "1958",
     "withdrawalDate": "14/09/1985",
