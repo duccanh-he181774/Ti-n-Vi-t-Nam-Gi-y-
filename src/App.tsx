@@ -350,8 +350,8 @@ const epochs: TimeEpoch[] = [
     id: "pre-wwii-1939",
     name: "Trước Thế Chiến",
     startYear: 1939,
-    endYear: 1939,
-    scrollHeight: 200,
+    endYear: 1940,
+    scrollHeight: 300,
     color: "hsl(45, 70%, 85%)",
     backgroundImage:
       "url('https://puolotrip.com/uploads/images/2023/09/mount-Fansipan-summit-view-1-jpg.webp')",
