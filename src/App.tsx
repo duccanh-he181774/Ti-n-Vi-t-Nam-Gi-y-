@@ -3163,16 +3163,6 @@ export default function App() {
               và câu chuyện của đồng tiền giấy trên đất Việt.
             </p>
           </div>
-
-          <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-lg">
-            <div className="flex items-start gap-2 sm:gap-3 text-left">
-              <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">ℹ️</div>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/90 leading-relaxed">
-                Trong quá trình tổng hợp còn nhiều sai sót và thiếu sót, rất mong nhận được sự đóng góp từ cộng đồng để hoàn thiện hơn nữa bộ sưu tập này.
-              </p>
-            </div>
-          </div>
-
           <div className="bg-gradient-to-br from-yellow-50/90 to-amber-50/90 backdrop-blur-sm border border-yellow-600/25 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-xl">
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/95 leading-relaxed italic px-2">
               Dù tồn tại với vô số hình dạng và giá trị, tiền tệ không chỉ là phương tiện trao đổi,
@@ -3181,6 +3171,15 @@ export default function App() {
               Mỗi đồng tiền là một ký ức tập thể, nó phản ánh lựa chọn, biến động và khát vọng của từng thời đại.
               Khi nhìn lại hành trình của tiền, chúng ta cũng đang nhìn lại hành trình của chính mình trong lịch sử.
             </p>
+          </div>
+
+          <div className="bg-yellow-100/80 backdrop-blur-sm border border-yellow-600/20 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-lg">
+            <div className="flex items-start gap-2 sm:gap-3 text-left">
+              <div className="text-lg sm:text-xl md:text-2xl flex-shrink-0">ℹ️</div>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/90 leading-relaxed">
+                Trong quá trình tổng hợp còn nhiều sai sót và thiếu sót, rất mong nhận được sự đóng góp từ cộng đồng để hoàn thiện hơn nữa bộ sưu tập này.
+              </p>
+            </div>
           </div>
         </div>
       </div>
