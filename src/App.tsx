@@ -3151,9 +3151,10 @@ export default function App() {
               BẠN ĐÃ KHÁM PHÁ HẾT
             </h1>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-yellow-800 drop-shadow-md mb-3 sm:mb-4 md:mb-6">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold text-red-800 drop-shadow-md mb-3 sm:mb-4 md:mb-6">
               LỊCH SỬ TIỀN GIẤY TẠI VIỆT NAM
             </h2>
+
 
             <div className="w-12 sm:w-16 md:w-24 h-0.5 sm:h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-3 sm:mb-4 md:mb-6"></div>
 
