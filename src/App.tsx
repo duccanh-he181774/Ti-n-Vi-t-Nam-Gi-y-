@@ -517,7 +517,7 @@ const currencyData: CurrencyItem[] = [
     "issuer": "Ngân hàng Nhà nước Việt Nam",
     "issueDate": "2001",
     "withdrawalDate": "Không có giá trị lưu hành",
-    "imageUrl": "https://art-hanoi.com/bn/vn/p118-f.jpg",
+    "imageUrl": "https://res.cloudinary.com/do7ul09eo/image/upload/v1762994381/Screenshot_2025-11-13_073809_ldzpun.png",
     "imageDetailUrl": "https://res.cloudinary.com/do7ul09eo/image/upload/v1762419574/Screenshot_2025-11-06_144428_btda9m.png"
   },
   {
