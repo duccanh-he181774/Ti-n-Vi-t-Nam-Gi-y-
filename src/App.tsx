@@ -3174,7 +3174,6 @@ export default function App() {
           </div>
 
           <div className="bg-gradient-to-br from-yellow-50/90 to-amber-50/90 backdrop-blur-sm border border-yellow-600/25 rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-xl">
-            <div className="text-xl sm:text-2xl md:text-3xl mb-2 sm:mb-3 md:mb-4">💭</div>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg text-yellow-900/95 leading-relaxed italic px-2">
               Dù tồn tại với vô số hình dạng và giá trị, tiền tệ không chỉ là phương tiện trao đổi,
               mà còn là lời khẳng định của <span className="font-bold text-yellow-900 not-italic">niềm tin</span>.
