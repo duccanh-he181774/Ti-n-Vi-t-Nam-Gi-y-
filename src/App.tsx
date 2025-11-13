@@ -517,7 +517,7 @@ const currencyData: CurrencyItem[] = [
     "issuer": "Ngân hàng Nhà nước Việt Nam",
     "issueDate": "2001",
     "withdrawalDate": "Không có giá trị lưu hành",
-    "imageUrl": "https://res.cloudinary.com/do7ul09eo/image/upload/v1762994381/Screenshot_2025-11-13_073809_ldzpun.png",
+    "imageUrl": "https://art-hanoi.com/bn/vn/p118-f.jpg",
     "imageDetailUrl": "https://res.cloudinary.com/do7ul09eo/image/upload/v1762419574/Screenshot_2025-11-06_144428_btda9m.png"
   },
   {
@@ -2293,9 +2293,9 @@ const currencyData: CurrencyItem[] = [
   },
   {
     "id": "vn-100pi-1945",
-    "name": "100 Piastres Giấy (1945)",
+    "name": "100 Piastres (1945)",
     "year": 1945,
-    "description": "Tờ 100 piastres 1945 mang tông màu xanh dương. Mặt trước khắc họa hình ảnh bốn người lính (đại diện cho Việt, Lào, Campuchia) đang gác. Mặt sau là hình ảnh những người nông dân đang cấy lúa trên đồng, một biểu tượng của nền văn minh lúa nước. Phát hành bởi Ngân hàng Đông Dương.",
+    "description": "Tờ 100 piastres 1945 mang tông màu xanh dương. Mặt trước khắc họa hình ảnh một dãy tượng đá tại Angkor Thom (Campuchia). Mặt sau là hình ảnh những người nông dân đội nón lá đang gánh hàng (có thể là gánh lúa hoặc mạ) trên đồng. Phát hành bởi Ngân hàng Đông Dương.",
     "issuer": "Ngân hàng Đông Dương",
     "issueDate": "1945",
     "withdrawalDate": "~1954",
@@ -2460,7 +2460,7 @@ const currencyData: CurrencyItem[] = [
     "id": "vn-20pi-1936",
     "name": "20 Piastres Giấy (1936)",
     "year": 1936,
-    "description": "Tờ 20 piastres 1936 mang nhiều màu sắc, phát hành trước Thế chiến II. Mặt trước là chân dung một phụ nữ Pháp (biểu tượng cho nước Pháp hoặc nữ thần nông nghiệp Ceres) cầm chùm nho. Mặt sau là hình ảnh cô ngồi bên một con sư tử (biểu tượng sức mạnh), phía xa là bến cảng, tượng trưng cho sự kiểm soát thương mại của thuộc địa.",
+    "description": "Tờ 20 piastres 1936 mang nhiều màu sắc, do Ngân hàng Đông Dương phát hành. Mặt trước khắc họa một phụ nữ Pháp (tượng trưng cho nữ thần nông nghiệp Ceres) tay cầm bó lúa. Mặt sau cũng là người phụ nữ mặt trước nhưng có màu sắc, phía xa là hình ảnh đền Angkor Wat (Campuchia) và đền sư tử.",
     "issuer": "Ngân hàng Đông Dương",
     "issueDate": "1936",
     "withdrawalDate": "~1954",
@@ -2702,7 +2702,6 @@ const currencyData: CurrencyItem[] = [
 
 
 ];
-
 
 const YearIndicator = ({ year, currentEpoch, isVisible }: { year: number; currentEpoch: TimeEpoch | null; isVisible: boolean }) => {
   const displayYear = year < 0 ? `${Math.abs(year)} TCN` : year.toString();
