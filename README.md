@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+---
+description: Welcome to your team’s developer platform
+layout:
+  width: wide
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+metaLinks:
+  alternates:
+    - https://app.gitbook.com/s/2AwfWOGBWBxQmyvHedqW/
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Developer Platform
 
-Currently, two official plugins are available:
+<h2 align="center">Developer platform template</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">Welcome to your team’s new developer platform</p>
 
-## React Compiler
+<p align="center"><a href="http://app.gitbook.com/join" class="button primary">Sign up</a> <a href="http://app.gitbook.com/join" class="button secondary">Log in</a></p>
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h4><i class="fa-leaf">:leaf:</i></h4></td><td><strong>No code</strong></td><td>Get started with the developer platform in 5 minutes.</td><td><a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/c7MQlcXcBNc52d6JJ79Z/">Documentation</a></td><td><a href=".gitbook/assets/no-code.jpg">no-code.jpg</a></td></tr><tr><td><h4><i class="fa-server">:server:</i></h4></td><td><strong>Hosted</strong></td><td>Learn more about hosting the developer platform.</td><td><a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/c7MQlcXcBNc52d6JJ79Z/">Documentation</a></td><td><a href=".gitbook/assets/hosted.jpg">hosted.jpg</a></td></tr><tr><td><h4><i class="fa-terminal">:terminal:</i></h4></td><td><strong>API reference</strong></td><td>Browse, test, and implement APIs.</td><td><a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/sKkUsh3hhjqaKDDBFB8f/">API Reference</a></td><td><a href=".gitbook/assets/api-reference.jpg">api-reference.jpg</a></td></tr></tbody></table>
 
-## Expanding the ESLint configuration
+{% columns %}
+{% column %}
+### Get started in 5 minutes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Setting up your first API call should be the easiest part of getting started. With clear endpoints, copy-paste-ready examples, and quick authentication, you’ll be up and running in minutes—not hours.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+No guesswork, no complexity—just your first successful call, fast.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/c7MQlcXcBNc52d6JJ79Z/" class="button primary" data-icon="rocket-launch">Get started</a> <a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/sKkUsh3hhjqaKDDBFB8f/" class="button secondary" data-icon="terminal">API reference</a>
+{% endcolumn %}
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+{% column %}
+{% code title="index.js" overflow="wrap" %}
+```javascript
+// Import the SDK
+import ExampleAPI from "example-api";
+
+// Initialize the client
+const client = new ExampleAPI({ apiKey: "YOUR_API_KEY" });
+
+// Send your first message
+const response = await client.messages.send({
+  message: "Hello, world!"
+});
+
 ```
+{% endcode %}
+{% endcolumn %}
+{% endcolumns %}
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+{% columns %}
+{% column %}
+<figure><img src="https://gitbookio.github.io/onboarding-template-images/placeholder.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+{% column %}
+### Learn more about the developer platform
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Read guides, watch tutorials, and learn more about working with the developer platform and integrating it with your own stack.
+
+<a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/5bj5JT03FocPQtKZn0C3/" class="button primary" data-icon="book-open">Guides</a> <a href="https://app.gitbook.com/o/lYlxD3RJavyRDemboMHU/s/c7MQlcXcBNc52d6JJ79Z/" class="button secondary" data-icon="book">Documentation</a>
+{% endcolumn %}
+{% endcolumns %}
+
+<h2 align="center">Join a community of over 3,000 developers</h2>
+
+<p align="center">Join our Discord community or create your first PR in just a few steps.</p>
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h4><i class="fa-discord">:discord:</i></h4></td><td><strong>Discord community</strong></td><td>Join our Discord community to post questions, get help, and share resources with over 3,000 like-minded developers.</td><td><a href="https://www.gitbook.com/" class="button secondary">Join Discord</a></td><td></td></tr><tr><td><h4><i class="fa-github">:github:</i></h4></td><td><strong>GitHub</strong></td><td>Our product is 100% open source and built by developers just like you. Head to our GitHub repository to learn how to submit your first PR.</td><td><a href="https://www.gitbook.com/" class="button secondary">Submit a PR</a></td><td></td></tr></tbody></table>
